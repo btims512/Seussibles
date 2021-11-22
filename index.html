@@ -1,293 +1,798 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Seussibles!</title>
+    <!-- Our project just needs Font Awesome solid + brand -->
+    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+		<script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
+		<script src="script.js"></script>
+    <meta charset="utf-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Seussibles!" />
+    <meta property="og:title" content="Seussibles!" />
+    <meta
+      property="og:description"
+      content="An officially licensed Dr. Seuss NFT collecting experience from Tibles and Dapper Labs."
+    />
+    <meta
+      property="og:image"
+      content="https://seussibles.com/assets/social-share.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:url" content="https://seussibles.com" />
+    <meta name="viewport" content="width=1100, initial-scale=1" />
+    <meta
+      name="description"
+      content="An officially licensed Dr. Seuss NFT collecting experience from Tibles and Dapper Labs."
+    />
+    <meta name="author" content="Tibles" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tiblesHQ" />
+    <meta name="twitter:title" content="Seussibles!" />
+    <meta
+      name="twitter:description"
+      content="An officially licensed Dr. Seuss NFT collecting experience from Tibles and Dapper Labs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://seussibles.com/assets/social-share.png"
+    />
+    <meta name="msapplication-TileColor" content="#15a6ff" />
+    <meta name="theme-color" content="#DC6626" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- CSS for Carousel  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
 
-<head>
-	<title>Seussibles!</title>
-	<!-- Our project just needs Font Awesome solid + brand -->
-	<script defer src="/your-path-to-fontawesome/js/brands.js"></script>
-	<script defer src="/your-path-to-fontawesome/js/solid.js"></script>
-	<script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
-	<meta charSet="utf-8" />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="Seussibles!" />
-	<meta property="og:title" content="Seussibles!" />
-	<meta property="og:description"
-		content="An officially licensed Dr. Seuss NFT collecting experience from Tibles and Dapper Labs." />
-	<meta property="og:image" content="https://seussibles.com/assets/social-share.png" />
-	<meta property="og:image:type" content="image/png" />
-	<meta property="og:url" content="https://seussibles.com" />
-	<meta name="viewport" content="width=1100, initial-scale=1">
-	<meta name="description"
-		content="An officially licensed Dr. Seuss NFT collecting experience from Tibles and Dapper Labs." />
-	<meta name="author" content="Tibles" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@tiblesHQ" />
-	<meta name="twitter:title" content="Seussibles!" />
-	<meta name="twitter:description"
-		content="An officially licensed Dr. Seuss NFT collecting experience from Tibles and Dapper Labs." />
-	<meta name="twitter:image" content="https://seussibles.com/assets/social-share.png" />
-	<meta name="msapplication-TileColor" content="#15a6ff" />
-	<meta name="theme-color" content="#DC6626" />
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-	<link rel="manifest" href="assets/favicon/site.webmanifest" />
-	<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-	<link rel="stylesheet" href="styles/styles.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-	<!-- JavaScript -->
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<!-- CSS for Carousel  -->
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-</head>
+  <body>
+    <div class="wrapper">
 
-<body>
-	<div class="wrapper">
-		<div class="hero-bg">
-			<div class="hero-container">
-				<div class="hero-column-title" style="padding-top: 80px;">
-					<img src="assets/logo-seussibles.svg" title="mainlogo" />
-					<h4>An officially licensed Dr. Seuss NFT collecting <br> experience from Tibles and Dapper Labs. </h4>
-					<img src="assets/Download_on_the_App_Store_Badge.png" alt="Download on Apple App Store">
+      <div class="container hero-bg">
+        <div class="hero-row">
+          <div class="co left">
+            <img
+              src="assets/logo-seussibles.svg"
+              title="mainlogo"
+            />
+            <h4>
+              An officially licensed Dr. Seuss NFT collecting 
+              experience from Tibles and Dapper Labs.
+						</h4>
+						<a href="https://google.com">
+							<img
+								src="assets/badge-apple.svg"
+								title="app-store"
+								alt="Download on Apple App Store"
+								style="width: 200px;"
+							/>
+						</a>
+          </div>
+          <div class="co right fade-in-image">
+            <img
+              src="assets/img-hero-cards.png"
+              style="width: 100%; background-size: cover"
+            />
+          </div>
 				</div>
-				<div class="hero-column-cards">
-					<img src="assets/img-hero-cards.png" style="width: 100%; background-size: cover;" />
+				
+				<div class="container section-collectibles" style="" >
+					<div class="row-col">
+						<div class="co">
+							<div class="co-content">
+								<img title="graphic" src="assets/img-tree-items.png" style="min-width: 100%;" />
+							</div>
+						</div>
+						<div class="co" style="margin-top: auto; margin-bottom: auto">
+							<div class="text-block">
+								<h1>Seussibles! Collectibles</h1>
+								<p>
+									The world of Dr. Seuss makes its debut in the world of digital
+									collectibles with Seussibles! NFTs.
+									You’ll love these collectibles here or there, you’ll love these
+									stickers anywhere!
+								</p>
+								<br />
+								<br />
+								<!-- <button class="primary">Start Collecting</button> -->
+							</div>
+						</div>
+					</div>
 				</div>
+      </div>
+      <div class="container container-icons">
+        <div class="row" style="gap: 0px, ">
+          <div class="logo-row-l">
+            <div class="co">
+              <img
+                src="assets/logo-drseuss.svg"
+                alt="Dr. Seuss Logo"
+                width="100%"
+              />
+            </div>
+            <div class="co">
+              <img
+                src="assets/logo-dapper.svg"
+                alt="Tibles Logo"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div class="logo-row-r">
+            <div class="co">
+              <img
+                src="assets/logo-tibles.svg"
+                alt="Dapper Logo"
+                width="100%"
+              />
+            </div>
+            <div class="co">
+              <img
+                src="assets/logo-flow.svg"
+                alt="Flow Blockchain Logo"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
 			</div>
-			<div class="hero-container-bottom">
-				<div class="hero-column-left">
-					<img src="assets/img-seussibles-graphic.png" style="height: 27vh; " />
-				</div>
-				<div class="hero-column-right" style="margin-top: auto; margin-bottom: auto; max-width: 432px;">
-					<h1>Seussibles! Collectibles</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra. Donec ante elit, mattis vel sapien et, pulvinar
-						pretium enim.</p>
-					<br>
-					<button class="primary">Start Collecting</button>
-				</div>
-			</div>
-		</div>
-		<div class="icons-row">
-			<div class="icons">
-				<img src="assets/logo-drseuss.svg" alt="" style="width: 175px;">
-				<img src="assets/logo-tibles.svg" alt="" style="width: 175px;">
-				<img src="assets/logo-dapper.svg" alt="" style="width: 175px;">
-				<img src="assets/logo-flow.svg" alt="" style="width: 175px;">
-			</div>
-		</div>
-		<div class="buying-bg">
-			<div class="buying-left">
-				<img src="./assets/img-buying-lg-cut.png" alt="" class="card-img-1"
-					style="width: 200px; height: 309.96px; padding-top: 20px;">
-				<img src="./assets/img-buying-sm.png" alt="" class="card-img-2"
-					style="width: 280px; height: 350.96px; padding-top: 20px;">
-			</div>
-			<div class="simple-buying" style="margin-top: auto; margin-bottom: auto;">
-				<h1>Simple Buying</h1>
-				<p>Apple in-app purchases make buying Seussibles absolutely seamless.
-					<br>
-					<br>
-					On seussibles.com you’ll be able to use your credit card or cryptocurrency.</p>
-				<button class="primary">Download the App</button>
-			</div>
-		</div>
-		<div class="yellow-bg">
-			<div class="show-org1" style="margin-top: auto; margin-bottom: auto;">
-				<h1>Barter Trading</h1>
-				<p>Swap your dupes for the stuff you need with the most intuitive and fun trading experience you’ll find
-					anywhere.
-					Unleash your inner negotiator and complete those sets! </p>
-				<button class="primary">Download the App</button>
-			</div>
-			<div class="trading-phone">
-				<img src="/assets/img-trading.png" title="tradingphone" alt="">
-			</div>
-		</div>
-		<div class="blue-bg">
-			<img src="/assets/img-showcase-bar.png" alt="" title="sidebars">
-			<div class="img-room">
-				<img src="./assets/img-room.png" alt="" title="imgroom">
-			</div>
-			<div class="show-org" style="margin-top: auto; margin-bottom: auto;">
-				<h1>Showcase and Organize</h1>
-				<p>Showcase your favorites or organize them in custom stacks! They’re your Seussibles—arrange them however
-					you’d
-					like, and have them always at your fingertips. It’s your world!</p>
-				<!-- <br> -->
-				<button class="primary">Download the App</button>
-			</div>
-			<img src="/assets/img-showcase-bar.png" alt="" title="sidebars">
-		</div>
-		<div class="top-cards">
-			<img src="/assets/img-card-01.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-02.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-03.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-04.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-05.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-06.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-07.png" alt="" style=" width: 110px;
-			height: 170px;">
-		</div>
-		<div class="bottom-cards">
-			<img src="/assets/img-card-08.png" alt="" style="  width: 95px;
-			height: 170px;" title="1stbottomcard">
-			<img src="/assets/img-card-09.png" alt="" style=" width: 125px;
-			height: 170px;">
-			<img src="/assets/img-card-10.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-11.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-12.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-13.png" alt="" style=" width: 125px;
-			height: 170px;">
-			<img src="/assets/img-card-14.png" alt="" style=" width: 110px;
-			height: 170px;">
-			<img src="/assets/img-card-15.png" alt="" style=" width: 110px;
-			height: 170px;">
-		</div>
-		<div class="community-bg">
-			<div class="com-discord" style="margin-top: auto; margin-bottom: auto;">
-				<h1 style="text-align: center;width: auto;">Community</h1>
-				<p style="text-align: ;">Bring your thoughts, opinions, rants and raves to like-minded people in our forums and
-					chats! Give gifts to
-					fellow collectors! Brag about your best stuff, or just drop a us a line to tell us how we can be better.</p>
-				<button class="primary" style="background-color: #5865F2; width: -webkit-fill-available; margin: 5px;">Join
-					Our
-					Discord</button>
-			</div>
-			<div class="people-img">
-				<img src="/assets/Group 312-2.png" alt="Images of a group of people in bubbles">
-			</div>
-		</div>
-		<div class="yellow-bg2">
-			<!-- <img src="/assets/Group_313.png" alt="" style="width: 100vw; height: 100%"> -->
-			<div class="books">
-				<h1>NFTs Drawn from the Classic Titles</h1>
-				<!-- <img src="/assets/Rectangle-707.png" alt="" style="height: 400px;"> -->
-				<img src="/assets/img-book-01.png" alt="" style="width: 160px; padding: 12px;">
-				<img src="/assets/img-book-02.png" alt="" style="width: 160px; padding: 12px;">
-				<img src="/assets/img-book-03.png" alt="" style="width: 160px; padding: 12px;">
-				<img src="/assets/img-book-04.png" alt="" style="width: 160px; padding: 12px;">
-				<img src="/assets/img-book-05.png" alt="" style="width: 160px; padding: 12px;">
-				<img src="/assets/img-book-06.png" alt="" style="width: 160px; padding: 12px;">
-				<!-- <img src="/assets/Rectangle-708.png" alt="" style="height: 400px;"> -->
-			</div>
-		</div>
-		<div class="com-quotes-bg">
-			<h1>What the Community is saying</h1>
-			<!-- <img src="/assets/Group-314-2.png" alt="" style="width: 100vw;"> -->
-			<div class="outer">
-				<div class="com-quotes" style="margin-top: auto; margin-bottom: auto;">
-					<img src="/assets/quote.png" alt="">
-					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra.”
-						<p />
-						<strong>Seussible Fan</strong>
-				</div>
-				<div class="com-quotes" style="margin-top: auto; margin-bottom: auto;">
-					<img src="/assets/quote.png" alt="">
-					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra.”
-						<p />
-						<strong>Seussible Fan</strong>
-				</div>
-				<div class="com-quotes" style="margin-top: auto; margin-bottom: auto;">
-					<img src="/assets/quote.png" alt="">
-					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra.”
-						<p />
-						<strong>Seussible Fan</strong>
-				</div>
-				<div class="com-quotes" style="margin-top: auto; margin-bottom: auto;">
-					<img src="/assets/quote.png" alt="">
-					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra.”
-						<p />
-						<strong>Seussible Fan</strong>
-				</div>
-				<div class="com-quotes" style="margin-top: auto; margin-bottom: auto;">
-					<img src="/assets/quote.png" alt="">
-					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra.”
-						<p />
-						<strong>Seussible Fan</strong>
-				</div>
-				<div class="com-quotes" style="margin-top: auto; margin-bottom: auto;">
-					<img src="/assets/quote.png" alt="">
-					<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis mattis nisl, vel consequat urna
-						volutpat nec. Nullam malesuada velit vel euismod pharetra.”
-						<p />
-						<strong>Seussible Fan</strong>
+			<div class="container section-buying">
+				<div class="row-buy">
+					<div class="co" style="position: relative;">
+						<div class="co-content">
+							<img
+							src="./assets/pack-opening-bg.gif"
+								alt="Pack of unopened Dr. Seuss cards"
+								class="card-img-1"
+								style="width: 50%;"
+							/>
+							<div class="overlay">
+								<img 	src="./assets/pack-opening-device.png" alt="Phone border" style="width: 58%;" title="border"
+								/>
+							</div>
+							<img
+								src="./assets/img-buying-sm.png"
+								alt=""
+								class="card-img-2"
+								style="width: 280px; height: 350.96px; padding-top: 20px"
+							/>
+						</div>
+					</div>
+					<div class="co" style="margin-top: auto; margin-bottom: auto">
+						<div class="text-block">
+							<h1>Simple Buying</h1>
+							<p>
+								Apple in-app purchases make buying Seussibles! absolutely seamless. No complicated wallet setup. No transaction fees.
+								<br />
+								<br />
+								On seussibles.com you’ll be able to buy your Seussibles! with your credit card or cryptocurrency.
+								<br />
+								<br />
+							</p>
+							<a href="https://google.com">
+								<img src="assets/badge-apple.svg" alt="" title="simple-buy-btn">
+								<img src="assets/badge-apple.svg" alt="" title="simple-buy-btn2">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bottom-banner-bg">
-			<div class="bottom-container" style="margin-top: auto; margin-bottom: auto;">
-				<div class="bottom-container-content">
-					<img src="/assets/img-card-hat.png" alt="" title="cathat" style="width: 130px; height: 135px;">
-					<img src="/assets/logo-seussibles.png" alt="" title="seusslogo">
-					<h3>Start collecting and download today!</h3>
-					<img src="assets/Download_on_the_App_Store_Badge.png" title="appstore">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="footer-container">
-			<p>Follow Us <br> (Social Icons Here)
-				<img src="assets/Download_on_the_App_Store_Badge2.png" style="width: 100px; height: 35px;">
-			</p>
-			<HR>
-		</div>
-		<div class="footer-container">
-			<div>
-				<div style="display: flex; flex-flow: column; float: right;">
-					<img src="assets/logo-dapper.svg" style="width: 80px">
-					<img src="assets/img-footer-accent.png" style="width: 60px; float: right;">
-				</div>
-				<img src="assets/logo-tibles.svg" style="width: 80px;float: right;">
-				<p>Frequently Asked Questions <br>
-					Support
-				</p>
-				<hr>
-				<p> <strong>
-						Terms Privacy Sitemap
-					</strong>
-				</p>
-				<p style="size: 6px;">©2021 Tibles, Inc. - TM & ©2021 Dr. Seuss Enterprises, L.P. - Officially licensed product
-					of
-					Dr. Seuss
-					Enterprises, L.P. <br>
-					Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store
-					is
-					a service mark of Apple Inc.</p>
-			</div>
-			<hr>
-		</div>
-		<div class="cookie-footer">
-			<div class="cookie-footer-content">
-				<p style="color: var(--white);">We use cookies to ensure the best experience of our website. For more
-					information
-					click <a href="https://google.com" style="color: var(--white);">here</a></p>
-				<p style="color: var(--white); font-size: 14px; text-align: end;" class="foot-1">x</p>
-				<img src="/assets/btn-cookies.png" style="width: 132px; height: 39px; padding-top: 16px;" class="foot-2" alt="">
-			</div>
-		</div>
-	</div>
-</body>
 
+      <div class="container section-trading">
+        <div class="rowR">
+          <div class="co center">
+            <img src="/assets/img-trading.png"  title="img-trading" alt=""/>
+          </div>
+          <div class="co-trade">
+            <div class="text-block-li">
+              <h1>Barter Trading</h1>
+              <p>
+                Packs sold out? Didn’t pull the special sticker you wanted? Not
+                to worry! Swap your dupes for the stuff you need using the most
+                intuitive and fun trading experience you’ll find anywhere.
+              </p>
+              <ul>
+                <li>
+                  Initiate trades with friends (and make new ones!) to build out
+                  your collection.
+                </li>
+                <li>
+                  Create your own trade posts that show what you’re looking for,
+                  and what you’re happy to trade away.
+                </li>
+                <li>
+                  Search through community posts for real time trading floor
+                  action.
+                </li>
+                <li>
+                  Transfer items on the blockchain quickly and seamlessly.
+                </li>
+                <li>
+                  Start chats to unleash your inner negotiator and complete
+                  those sets!
+                </li>
+              </ul>
+              <!-- <button class="primary">Download the App</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container section-show">
+        <div class="row-show">
+          <!-- <img src="/assets/img-showcase-bar.png" alt="" title="sidebars"> -->
+          <div class="co center">
+            <img src="./assets/img-room-themes.png" width="100%" title="img-room" />
+          </div>
+          <div class="co">
+            <div class="text-block-li">
+              <h1>Showcase, Organize and Share</h1>
+              <p *style="text-align: Start"* >They’re YOUR Seussibles!</p>
+              <ul>
+                <li>
+                  Showcase your favorites, rares, or low mints on your Wall.
+                </li>
+                <li>Organize them in our custom Stacks.</li>
+                <li>
+                  Export your faves as profile pics, wallpaper, and for all your
+                  socials—share them with the world!
+                </li>
+              </ul>
+              <!-- <button class="primary">Download the App</button> -->
+            </div>
+          </div>
+          <!-- <img src="/assets/img-showcase-bar.png" alt="" title="sidebars"> -->
+        </div>
+			</div>
+			
+			<div class="container section-com">
+				<div class="row-com" style="background-image: url(/assets/img-bg-buying.png);">
+					<div class="co" style="margin-top: auto; margin-bottom: auto">
+						<div class="text-block-li">
+							<h2 style=" width: auto">Community</h2>
+							<p>Join the conversation and connect!</p>
+							<ul>
+								<li>Bring your thoughts, opinions, rants and raves to like-minded people in our forums and chats!</li>
+								<li>Give gifts to fellow collectors! </li>
+								<li style="padding-bottom: 20px;" >Brag about your best stuff, or just drop us a line to tell us how we’re doing.</li >
+							</ul>
+						</div>
+					</div>
+					<div class="co center">
+						<img
+							src="/assets/img-community.png"
+							title="people"
+							alt="Images of a group of people in bubbles"
+							style=" width: 480px;"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="container section-data">
+        <div class="row-data">
+          <!-- <img src="/assets/img-showcase-bar.png" alt="" title="sidebars"> -->
+          <div class="co center">
+            <img src="./assets/img-metadata.png" width="100%" title="meta-data" />
+          </div>
+          <div class="co">
+            <div class="text-block-li">
+              <h2>NFT Metadata</h2>
+              <p>All the critical information about your Seussibles! NFT collectibles is at your fingertips. Cards swipe up to reveal:</p>
+              <ul>
+                <li>Mint, ID, Edition, and Series  information</li>
+                <li>Creation and Acquisition dates</li>
+                <li>Ownership History</li>
+                <li>And more!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+			</div>
+
+			<div class="container section-cards"> <h2 style="text-align: center;">From Cat in the Hat, to the Grinch, all your beloved characters </h2>
+				<div class="top-cards">
+					<!-- TOP CARD ROW -->
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-01-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-01-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-02-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-02-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-03-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-03-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-04-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-04-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-05-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-05-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-06-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-06-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-07-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-07-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM CARD ROW -->
+				<div class="bottom-cards">
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-08-front.png" alt="" title="1stbottomcard"/>
+							</div>
+							<div class="back">
+								<img src="/assets/card-08-front.png" alt="" title="1stbottomcard" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-09-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-09-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-10-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-10-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-11-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-11-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-12-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-12-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-13-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-13-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-14-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-14-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="card-container">
+						<div class="card" onclick="flip(event)">
+							<div class="front">
+								<img src="/assets/card-15-front.png" alt="" />
+							</div>
+							<div class="back">
+								<img src="/assets/card-15-front.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <div class="yellow-bg2">
+        <div class="container books">
+          <img
+            src="/assets/book-01.png"
+            alt=""
+            style="width: 160px; "
+          />
+          <img
+            src="/assets/book-02.png"
+            alt=""
+            style="width: 160px; "
+          />
+          <img
+            src="/assets/book-03.png"
+            alt=""
+            style="width: 160px;"
+          />
+          <img
+            src="/assets/book-04.png"
+            alt=""
+            style="width: 160px;"
+          />
+          <img
+            src="/assets/book-05.png"
+            alt=""
+            style="width: 160px;"
+          />
+          <img
+            src="/assets/book-06.png"
+            alt=""
+            style="width: 160px;"
+          />
+        </div>
+      </div>
+      <div class="com-quotes-bg">
+				<h1>What our Community thinks!</h1>
+				<div class="outer-scroll">
+					<div class="outer">
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+						<div class="com-quotes" style="margin-top: auto; margin-bottom: auto">
+							<img src="/assets/icn-quote.svg" alt="" />
+							<p>
+								“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+								lobortis mattis nisl, vel consequat urna volutpat nec. Nullam
+								malesuada velit vel euismod pharetra.”
+							</p>
+	
+							<p />
+							<strong>Seussible Fan</strong>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="bottom-banner-bg">
+        <div
+          class="bottom-container"
+          style="margin-top: auto; margin-bottom: auto"
+        >
+          <div class="bottom-container-content">
+            <img
+              src="/assets/app-icn.png"
+              alt=""
+              title="cathat"
+              style="width: 130px; height: 135px"
+            />
+            <img src="/assets/logo-seussibles.svg" alt="" title="seusslogo" />
+						<h3>Start collecting and download today!</h3>
+						<a href="https://google.com"></a>
+            <img
+              src="assets/badge-apple.svg"
+              title="appstore"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container footer" style="text-align: -webkit-center;">
+      <div class="footer-container">
+        <p>
+					Follow Us
+					<a href="https://google.com">
+						<img
+            src="assets/badge-apple.svg"
+            style="width: 100px; height: 35px"
+						/>
+					</a>
+        </p>
+				<div style="text-align: justify;padding-bottom: 17px;">
+					<a href="https://google.com" >
+						<img src="/assets/icn-twitter.svg" alt="">
+					</a>
+					<a href="https://google.com">
+						<img src="/assets/icn-facebook.svg" alt="">
+					</a>
+					<a href="https://google.com">
+						<img src="/assets/icn-instagram.svg" alt="">
+					</a>
+				</div>
+				<hr />
+      </div>
+      <div class="footer-container">
+        <div class="footer-font">
+					<div class="desk-footer" style="display: flex; flex-flow: column; float: right">
+					</div>
+					<div class="footer-row">
+						<div class="footer-p">
+							<p style="text-align: start; font-size: 14px; line-height: 25px;" >
+								Frequently Asked Questions <br />
+								Support <br>
+							</p>
+							</div>
+							<div class="footer-icons">
+								<img src="assets/footer-logo-dapper.svg" title="dapper-logo" style="width: 110px; padding-left: 20px; margin-top: 7px;" />
+							<img src="assets/footer-logo-tibles.svg" title="tibles-logo" style="width: 100px" />
+							</div>
+						</div>
+						<br>
+					<hr />
+					<div class="TPS" style="font-size: 12px; text-decoration: none;">
+						<a href="https://google.com" style="text-decoration: none;" >
+						</a>
+						<p> 
+							<a href="https://tibles.com/policy.html#tac" style="text-decoration: none;color: var(--black);">
+								<u>Terms</u>  
+							</a>
+							<a href="https://tibles.com/policy.html#privacy" style="text-decoration: none;color: var(--black)">
+								<u>Privacy</u> 
+							</a>
+							<a href="https://tibles.com" style="text-decoration: none;color: var(--black)">
+								<!-- <u>Sitemap</u>  -->
+							</a>
+						</p>
+					</div>
+					<div class="legals">
+						<p>
+							©2021 Tibles, Inc. - TM & ©2021 Dr. Seuss Enterprises, L.P. -
+							Officially licensed product of Dr. Seuss Enterprises, L.P. <br />
+							Apple and the Apple logo are trademarks of Apple Inc., registered in
+							the U.S. and other countries. App Store is a service mark of Apple
+							Inc.
+					</div>
+          </p>
+        </div>
+      </div>
+
+  </body>
 </html>

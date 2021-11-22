@@ -45,9 +45,11 @@
   font-family: "Lato", sans-serif;
 }
 
-html, body {
+html,
+body {
+  max-width: 100vw;
   margin: 0;
-  background-color: var(--gray0);
+  background-color: var(--white);
 }
 
 .wrapper {
@@ -74,14 +76,111 @@ button.primary:hover {
   background-color: var(--gray60);
 }
 
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-icons {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px 71px 30px -22px;
+}
+
 .hero-bg {
-  background-image: url(../assets/img-hero-bg.png);
+  background-image: url(../assets/bg-img-1.png);
   background-color: var(--bg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  background-position: center;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+
+.section-collectibles {
+  background-image: url(../assets/bg-img-2.png);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.section-buying {
+  background-image: url(../assets/bg-img-3.png);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.section-trading {
+  background-image: url(../assets/bg-img-4.png);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.section-show {
+  background-image: url(../assets/bg-pattern-1.png);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.section-com {
+  background-image: url(../assets/bg-img-2.png);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.com-quotes-bg {
+  background-image: url(../assets/bg-img-2.png);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section-data {
+  background-image: url(../assets/bg-img-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
 .hero-container {
@@ -96,14 +195,39 @@ button.primary:hover {
 
 h1 {
   font-family: SeussFont;
+  text-align: start;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: SeussFont;
+  font-size: 40px;
+  text-align: start;
+}
+
+h3 {
+  font-family: SeussFont;
+  font-size: 26px;
 }
 
 h4 {
   font-family: SeussFont;
   font-weight: normal;
-  Line-height: 30.52px;
+  font-size: 24px;
+  width: 450px;
+  line-height: 34px;
   color: var(--white);
-  text-shadow: 0px 1.42px 2.85px #000000;
+  text-shadow: -2px 0px 2.85px #000000;
+}
+
+ul {
+  text-align: start;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hero-column-title {
@@ -131,7 +255,8 @@ div.hero-column-title img:nth-child(1) {
   width: 50%;
 }
 
-.hero-container-bottom, .buying-bg {
+.hero-container-bottom,
+.buying-bg {
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
@@ -147,51 +272,222 @@ div.hero-column-title img:nth-child(1) {
   /* background-color: #d22630;  */
 }
 
-.hero-column-right, h1 {
-  font-size: 20px;
-  /* width: 40%; */
+.hero-column-right,
+h1 {
+  font-size: 41px;
   /* background-color: #ffeb68; */
 }
 
-p { 
+p {
   font-family: Lato;
-  font-size: 11px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0em;
+  /* letter-spacing: 0em; */
   text-align: left;
+}
+
+.hero-row {
+  /* border: 1px solid red; */
+  display: flex;
+  height: fit-content;
+  gap: 32px;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 0px 40px;
+}
+
+.row {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 0px 40px;
+}
+
+.row-col {
+  display: flex;
+  /* height: fit-content; */
+  gap: 30px;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 0px 40px;
+}
+
+.row-show {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 40px 40px;
+  /* margin-bottom: -3px; */
+}
+
+.row-data {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  flex-flow: row-reverse;
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 40px 40px;
+}
+
+[title~="meta-data"] {
+  margin: 40px 40px -40px 40px;
+}
+
+.logo-row-l {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1360px;
+  /* margin: 40px 40px 0px 40px; */
+}
+
+.logo-row-r {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1360px;
+  /* margin: 40px 40px 0px 40px; */
+}
+
+.rowR {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  /* flex-flow: row-reverse nowrap; */
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 40px 40px;
+}
+
+.row {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  /* flex-flow: row-reverse nowrap; */
+  align-items: center;
+  max-width: 100vw;
+  margin: 40px 40px 0px 40px;
+}
+
+.row-buy {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 32px;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  max-width: 1360px;
+  margin: 75px 40px 60px 40px;
+}
+
+.row-com {
+  background-image: url(/assets/img-bg-buying.png);
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 138px;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  max-width: 1360px;
+  margin: 40px 40px 40px 40px;
+}
+
+.footer-row {
+  display: flex;
+  gap: 16px;
+  margin-top: -16px;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .icons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  /* justify-content: space-evenly;  */
   background-color: var(--white);
   width: 100vw;
 }
 
-.buying-bg {
-  background-image: url(../assets/img-bg-buying.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-end;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-content: flex-start;
+.center {
+  /* border: 1px solid red; */
+  justify-content: center;
+  text-align: center;
+  align-content: center;
 }
 
-.buying-left  {
-  /* background-color: #ffeb68; */
+.co {
+  /* border: 1px solid red; */
+  width: 50%;
+  text-align: start;
+  margin-bottom: -3px;
+}
 
+.co-trade {
+  /* border: 1px solid red; */
+  width: 50%;
+  text-align: -webkit-center;
+  margin-bottom: -3px;
+}
+
+.co-content {
+  display: flex;
+  min-width: 100%;
+  max-height: -webkit-fill-available;
+  justify-content: center;
+}
+
+.text-block {
+  width: 391px;
+}
+
+[title~="mainlogo"] {
+  max-width: fit-content;
+  width: 100%;
+}
+
+[title~="graphic"] {
+  max-width: -webkit-fill-available;
+}
+
+[title~="simple-buy-btn"] {
+  width: 35%;
+  float: left;
+}
+
+[title~="simple-buy-btn2"] {
+  display: none;
+  width: 35%;
 }
 
 .card-img-1 {
-  display: block;
+  position: absolute;
+  align-self: center;
+  border-radius: 18px;
+  padding-bottom: 10px;
+}
+
+.co-content-overlay {
+  /* z-index: 1; */
+  /* position: relative; */
+  align-self: center;
+}
+
+.overlay {
+  text-align: center;
 }
 
 .card-img-2 {
@@ -201,19 +497,6 @@ p {
 .simple-buying {
   min-width: 25%;
   margin-bottom: inherit;
-}
-
-/* temp background */
-.yellow-bg {
-  background-image: url(/assets/yellow-bg.png);
-  width: 100%;
-  height: 380px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly; 
 }
 
 .trading {
@@ -234,11 +517,10 @@ p {
   margin-top: -90px;
 }
 
-[title~=tradingphone] {
-  height: 410.87px;
-  width: 298px;
-  padding-top: 59px;
-  position: absolute;
+[title~="img-trading"] {
+  margin-left: -150px;
+  width: 125%;
+  padding-top: 23px;
 }
 
 /* temp background */
@@ -248,22 +530,12 @@ p {
   height: 350px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-[title~="imgroom"] {
-  height: 410.87px;
-  width: 290px;
-  padding-top: 59px;
-  position: absolute;
-}
 
-[title~=sidebars] {
-  width: 65.39px; 
-  max-height: 100%;
-}
 
-.img-room  {
+.img-room {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -277,6 +549,7 @@ p {
   max-height: fit-content;
   overflow-y: hidden;
 }
+
 .show-org1 {
   width: 30vw;
   max-height: fit-content;
@@ -297,12 +570,82 @@ p {
   align-content: flex-start;
 }
 
+
+div {
+  /* width: 100%; */
+  height: 100%;
+}
+
 .top-cards {
   display: flex;
   justify-content: space-around;
   width: 100vw;
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow-x: scroll;
+}
+
+
+.card-container {
+  width: 148px;
+  height: 224px;
+  perspective: 1000px;
+}
+
+.card {
+  /* margin: 20px; */
+  width: 148px;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.front,
+.back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.front {
+  width: 148px;
+  height: 224px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  width: 148px;
+  height: 224px;
+}
+
+.front>img {
+  width: 148px;
+  height: 224px;
+}
+
+.back>img {
+  transform: rotateY(180deg);
+  width: 148px;
+  height: 224px;
+}
+
+.front:hover {
+  bottom: 2px;
+  left: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px #000;
+}
+
+
+
+.back:hover {
+  bottom: 2px;
+  right: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px #000;
 }
 
 .bottom-cards {
@@ -310,8 +653,19 @@ p {
   justify-content: space-between;
   width: 100vw;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
+  overflow-x: scroll;
 }
+
+.bottom-cards>img {
+  width: 148px;
+}
+
+/* [title~="1stbottomcard"] {
+  margin-right: 20px;
+} */
+
+
 
 .community-bg {
   background-image: url(/assets/img-bg-community.png);
@@ -319,13 +673,17 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: fit-content;;
+  height: fit-content;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-content: flex-start;  
+  align-content: flex-start;
   padding-top: 120px;
   padding-bottom: 21px;
+}
+
+[title~="people"] {
+  margin-left: -37px;
 }
 
 .com-discord {
@@ -340,11 +698,11 @@ p {
 
 .people-img img {
   /* background-color: #d5ebb0; */
-  width: 341px; 
+  width: 341px;
   margin-right: 50px;
 }
 
-.books > h1 {
+.books>h1 {
   width: 100%;
   padding-bottom: 15px;
   /* background-color: cadetblue; */
@@ -353,47 +711,44 @@ p {
 }
 
 .books {
-  background-image: url(/assets/Group-313.png);
+  background-color: var(--yellow);
   background-size: cover;
-  min-width: 40px;
-  min-height: fit-content;
+  max-width: 100%;
+  /* min-height: fit-content; */
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
   padding: 21px;
-  justify-content: space-evenly;
-  flex-grow: 2;
 }
 
-.com-quotes-bg {
-  background-image: url(../assets/img-bg-buying.png);
-  background-color: var(--bg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.com-quotes-bg>h1 {
   width: 100%;
+  padding: 55px;
+  /* background-color: cadetblue; */
   display: flex;
-  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.com-quotes-bg > h1 {
-width: 100%;
-padding: 55px;
-/* background-color: cadetblue; */
-display: flex;
-justify-content: center;
+.com-quotes>p {
+  font-size: 11px;
+  line-height: 12px;
 }
 
-.outer{
+.outer-scroll {
+  overflow: hidden;
+  position: relative;
+}
+
+.outer {
+  position: absolute;
   width: 100%;
-  height: 23vh;
+  height: 32vh;
   white-space: nowrap;
   position: relative;
-  overflow-x:scroll;
-  overflow-y:hidden;
-  /* background-color: #00a3da;  */
+  overflow-y: scroll;
 }
 
-.outer div{
+.outer div {
   width: 319px;
   background-color: var(--white);
   margin: 0 0.25%;
@@ -419,24 +774,24 @@ justify-content: center;
   overflow-wrap: break-word;
 }
 
-.com-quotes-bg > h1 {
+.com-quotes-bg>h1 {
   padding: 30px;
 }
 
-.com-quotes > img {
+.com-quotes>img {
   float: right;
-  width: 26px;
+  width: 20px;
   margin: -3px;
   padding-left: 294px;
 }
 
-.com-quotes > p {
+.com-quotes>p {
   display: flex;
   flex-flow: row wrap;
 }
 
 .bottom-banner-bg {
-  background-image: url(/assets/bottom-bg.png);
+  background-image: url(/assets/bg-pattern-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -463,7 +818,7 @@ justify-content: center;
   height: 252px;
   border: 1px solid var(--yellow);
   padding-top: 59px;
-  background: #EEE98F;
+  background: #c7f693;
   backdrop-filter: blur(5px);
   border-radius: 32px;
 }
@@ -475,20 +830,19 @@ justify-content: center;
   height: fit-content;
 }
 
-.bottom-container-content + img {
+.bottom-container-content+img {
   width: 136.44px;
   margin-top: -5px;
 }
 
-[title~=appstore] {
-  width: 116px; 
-  height: 41px; 
+[title~="appstore"] {
+  width: 116px;
+  height: 41px;
   padding-top: 311px;
 }
 
-
-[title~=seusslogo] {
-  padding: 174px; 
+[title~="seusslogo"] {
+  padding: 174px;
   width: 214px;
 }
 
@@ -498,25 +852,58 @@ justify-content: center;
 }
 
 #footer {
-  background-color: var(--gray0);
+  background-color: var(--white);
   width: 100vw;
   height: 210px;
   justify-content: center;
+}
+
+.footer-font>p {
+  font-size: 11px;
+  text-align: justify;
 }
 
 .footer-container {
   /* background-color: #00a3da; */
   /* height: 17vh; */
   margin: 41px;
+  align-items: center;
+  max-width: 1360px;
   justify-content: space-between;
 }
 
-.footer-container > p {
+.footer-container>p {
   display: flex;
   flex-wrap: wrap;
+  font-family: SeussFont;
+  font-size: 18px;
+  margin-bottom: -8px;
+  font-weight: bold;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+}
+
+.desk-footer {
+  display: block;
+}
+
+.mob-foot {
+  display: none;
+}
+
+.footer-icons {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-items: start;
+}
+
+.TPS {
+  text-align: justify;
+}
+
+.legals>p {
+  font-size: 11px;
 }
 
 .cookie-footer {
@@ -541,474 +928,501 @@ justify-content: center;
   display: none;
 }
 
-/* ----------------------------------------------------------------------- */
+/* ---------------------------New media queries---------------------------- */
 
-@media only screen and (max-width: 760px) {
+.fade-in-image {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeI2 2s;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
   h1 {
     font-family: SeussFont;
-    font-size: 32px;
-    /* font-weight: normal; */
-    Line-height: 30.52px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--fg);
+  }
+
+  h2 {
+    font-family: SeussFont;
+    font-size: 28px;
+    color: var(--fg);
+    text-align: left;
   }
 
   h4 {
     font-family: SeussFont;
     font-weight: normal;
-    Line-height: 30.52px;
-    color: var(--white);
-    text-shadow: 0px 1.42px 2.85px #000000;
-  }
-
-  button.primary {
-    transition-duration: 0.4s;
-    cursor: pointer;
-    font-weight: 700;
-    text-align: center;
-    color: var(--fg3);
-    background-color: var(--bg3);
-    border-radius: 8px;
-    padding: 16px 16px 16px 16px;
-    border: none;
-    margin-right: 17px;
-  }
-
-  [title~=mainlogo] {
-    width: 72%;
-  }
-
-  .hero-column-title {
-    font-family: "Lato", sans-serif;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: center;
-    width: 100vw;
-  }
-
-  .hero-column-cards {
-    width: 100vw;
-  }
-
-  .hero-column-right, h1 {
     font-size: 24px;
-    text-align: -webkit-center;
-    width: 89vw;
-    /* background-color: #ffeb68; */
+    width: 450px;
+    line-height: 34px;
+    color: var(--white);
+    text-shadow: -2px 0px 2.85px #000000;
   }
 
-  .hero-column-right > p {
-    text-align: center
+  p {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
   }
 
-  .hero-container-bottom {
-    flex-flow: wrap-reverse;
-    justify-content: space-evenly;
-  }
-  
-  /* Icon Row  */
-  .icons {
-    width: 100vw;
-    justify-content: flex-start;
-    justify-content: center;
-    flex-flow: row wrap;
+
+  ul {
+    text-align: start;
+    line-height: 26px;
+    font-size: 14px;
   }
 
-  .icons > * {
-    flex: 1 1 1 1 auto;
+  .text-block {
+    width: 334px;
   }
 
-  .buying-bg {
-    background-image: url(../assets/img-bg-buying.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .text-block-li>p {
+    text-align: start;
     width: 100%;
-    height: 80vh;
-    flex-direction: column;
-    justify-content: flex-end;
+  }
+
+  .container {
     display: flex;
-    justify-content: space-evenly;
-    align-content: flex-start;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-row {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 32px;
+    height: fit-content;
     flex-flow: column;
-    overflow: hidden;
+    align-items: center;
+    max-width: 1360px;
+    margin: 40px 40px 0px 40px;
   }
 
-  .simple-buying  {
-    align-self: center;
-    height: 25vh;
+  .section-collectibles {
+    padding-top: 60px;
   }
 
-  .buying-left  {
-    align-self: center;
+  .row {
+    display: flex;
+    gap: 16px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
   }
-  
+
+  .row-col {
+    display: flex;
+    gap: 16px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  .container-icons {
+    margin: 0px;
+  }
+
+  .row-show {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 32px;
+    flex-flow: column-reverse;
+    align-items: center;
+    max-width: 1360px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+
+  .row-com {
+    background-image: url(/assets/img-bg-buying.png);
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 32px;
+    flex-flow: column-reverse;
+    align-items: center;
+    max-width: 1360px;
+    margin: 40px 40px 0px 40px;
+  }
+
+  /* [title~="img-trading"] {
+    margin-left: -20px;
+  } */
+
+  [title~="img-trading"] {
+    margin-left: -55px;
+    width: 125%;
+  }
+
+  [title~="people"] {
+    margin-left: -21px;
+    margin-right: -120px;
+  }
+
+  .row-data {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 32px;
+    flex-flow: column-reverse;
+    align-items: center;
+    max-width: 1360px;
+    margin: 40px 40px 0px 40px;
+  }
+
+  [title~="img-room"] {
+    padding-top: 23px;
+  }
+
+  [title~="meta-data"] {
+    margin: 0px;
+    padding-top: 23px;
+  }
+
+  .rowR {
+    display: flex;
+    gap: 16px;
+    flex-grow: 1;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 16px;
+  }
+
+  .row-buy {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 32px;
+    flex-flow: column-reverse;
+    justify-content: center;
+    max-width: 100vw;
+    margin: 40px 40px 40px 40px;
+  }
+
+  .co-trade {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: -webkit-center;
+    margin-bottom: -3px;
+  }
+
   .card-img-1 {
+    position: absolute;
+    align-self: center;
+    border-radius: 18px;
+    padding-bottom: 3px;
+  }
+
+  .front>img {
+    width: 125.58px;
+    height: 176.5px;
+  }
+
+  .back>img {
+    width: 125.58px;
+    height: 176.5px;
+  }
+
+  .front:hover {
     display: none;
   }
 
-  .card-img-2 {
-    display: block;
-  }
-  /* Trading bg */
-
-  /* temp background */
-  .yellow-bg {
-    background-image: url(/assets/yellow-bg.png);
-    width: 100%;
-    height: 520px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-flow: row-reverse;
-    /* height: 50vh; */
+  .back:hover {
+    display: none;
   }
 
-[title~=tradingphone] {
-  width: 200px; 
-  height: 282.5px; 
-  padding-top: 327px; ;
-  margin-left: 35%;
-}
-
-.trading {
-  flex-flow: row-reverse;
-  line-height: 15px;
-  width: 500px;
-  /* height: 100%; */
-  overflow: hidden;
-}
-
-.trading-phone {
-  /* background-color: #00a3da; */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 20%;
-  height: 126%;
-  margin-top: -90px;
-}
-
-.trading p {
-  line-height: 15px;
-}
-
-.trading h1 {
-  line-height: 15px;
-  width: 500px;
-}
-
-  /* Show and Org */
-
-  [title~=imgroom] {
-    width: 165px; 
-    height: 282.5px; 
-    padding-top: 297px;
-    margin-left: 34vw;
-  }
-
-  .show-org1 {
-    flex-flow: row-reverse
-    width: 50vw;
-    height: 35vh;
-    max-height: fit-content;
-    margin-right: 20%;
-    padding-bottom: 352px;
-  }
-
-  .show-org1 h1 {
-    width: 31vw;
-  }
-  
-  .show-org {
-    flex-flow: row-reverse;
-    width: 50vw;
-    height: 15vh;
-    max-height: fit-content;
-    margin-right: 20%;
-    padding-bottom: 352px;
-  }
-
-  .show-org p {
-    flex-flow: row-reverse;
-    justify-content: center;
-    line-height: 15px;
-    
-  }
-
-  .img-room  {
-    width: 22vw;
-  }
-
-  .show-org h1 {
-    width: 50vw;
-  }
-
-  [title~=sidebars] {
-    width: 2.5vw; 
-    max-height: 100%;
-    align-items: center;
-    flex-flow: row-reverse;
-  }  
-
-  .blue-bg {
-    height: 520px;
-  }
-
-  /* Cards */
   .top-cards {
+    display: flex;
+    justify-content: flex-start;
     width: 100vw;
-    height: fit-content;
-    justify-content: stretch;
-    white-space: nowrap;
-    position: relative;
-    overflow-x:scroll;
-    padding-top: 20px;
-    padding-bottom: 0%;
-  }
-
-  .top-cards img {
-    padding: 20px;
-  }
-
-  div.top-cards img:first-child {
-    padding-left: 20px;
-  }
-
-  .bottom-cards {
-    width: 100vw;
-    height: fit-content;
-    justify-content: stretch;
-    white-space: nowrap;
-    position: relative;
-    overflow-x:scroll;
-    padding-top: 0px;
-  }
-
-  .bottom-cards img {
-    padding: 20px;
-  }
-
-  div.bottom-cards img:first-child {
-    padding-left: 0px;
-  }
-
-  /* Community  */
-  .com-discord button {
-    width: 40vw;
-    height: 5vh;
-  }
-
-  .com-discord {
-    width: 70%;
-    /* height: 280px; */
-    margin-left: 12%;
-  }
-
-  .people-img img {
-    width: 87vw;
+    padding-top: 40px;
     padding-bottom: 40px;
-    margin: 6vw;
+    overflow-x: scroll;
   }
 
-  .community-bg {
-    max-width: max-content;
-    height: 65vh;
-    overflow-x: hidden;
-    flex-flow: column-reverse;
-    padding-bottom: 60px;
-    padding-top: 50px;
-  }
-
-  /* Books */
-  /* temp yellow background */
   .yellow-bg2 {
-    background-color: var(--yellow);
-    height: fit-content;
+    max-width: fit-content;
   }
 
   .books {
-    background-image: url(/assets/Group-313.png);
-    background-size: 1600px;
-    background-repeat: round;
-  }
-
-  .books > h1 {
-    line-height: 53.2px;
-    text-align: center;
-    font-size: 36px;
-  }
-
-  /* Community quotes */
-  .com-quotes-bg {
+    background-color: var(--yellow);
+    background-size: cover;
+    min-width: 40px;
+    min-height: fit-content;
+    overflow: hidden;
     display: flex;
+    flex-flow: row wrap;
+    padding: 0px;
+    justify-content: space-around;
+    flex-grow: 2;
+  }
+
+  .co {
+    width: 100%;
+    /* border: 1px solid greenyellow; */
     justify-content: center;
-    align-items: center;
+    align-content: center;
     text-align: center;
-  }
-  
-  .com-quotes-bg > h1 {
-    display: flex;
-    width: fit-content;
-    justify-content: center;
-    line-height: 53.2px;
-    align-self: center;
-    font-size: 36px;
-    padding-bottom: 1px;
+    flex-basis: 50%;
   }
 
-  .outer {
-    height: 32vh;
-    padding-top: 5vh;
+  .textBlock {
+    width: 100%;
   }
 
-  .outer div {
-    height: max-content;
+  [title~="graphic"] {
+    width: 100%;
   }
 
-  .com-quotes > p {
-    width: 67vw;
-    /* background-color: darkorchid; */
+  [title~="people"] {
+    max-width: 100vw;
+    margin-left: -120px;
   }
 
-  /* Bottom-banner */
-  .bottom-banner-bg {
-    height: 60vh;
-  }
-
-  .bottom-container{
-    height: 350px;
-    justify-content: center;
-    width: 350px;
-  }
-
-  .bottom-container h3 {
-    padding-top: 115px;
-    width: 250px;
-    padding-left: 18px;
-    font-size: 28px;
-    display: flex;
-    text-align: center;
-  }
-
-  .bottom-banner-bg {
-    min-height: 500px;
-    max-height: 80%;
-  }
-
-  [title~=appstore] {
-    width: 110px; 
-    height: 45px; 
-    padding-top: 368px;
-    padding-right: 10px;
-  }
-
-  [title~=seusslogo] {
-    width: 275px;
-    padding-right: 141px;
-  }
-
-  [title~=cathat] {
-    width: 130px; 
-    height: 135px;
-    padding-right: 15px;
-  }
-  
-  .hero-column-cards {
-    min-width: 200px;
-  }
-
-  .cookie-footer p {
-    max-width: 18vh;
-  }
-
-  .foot-1 {
+  [title~="simple-buy-btn"] {
+    width: 30%;
     display: none;
   }
 
-  .foot-2 {
-    display: block;
+  .footer-font>p {
+    font-size: 11px;
+    padding-bottom: 46px;
   }
- 
+
+  .footer-row {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: revert;
+  }
+
+  .footer-icons {
+    align-self: start;
+    width: 30%;
+  }
+
+  .TPS {
+    padding-right: 147px;
+    text-align-last: justify;
+  }
 }
 
-/* Computers Screens */
-@media only screen and (min-width: 761px) {
 
-  /* [title~=imgroom] {
-    height: 410.87px; 
-    padding-left: 0%;
-    position: absolute;
-  }     */
-
-  .top-cards {
-    flex-flow: row wrap;
-    /* justify-content: space-around; */
-    min-width: fit-content;
-    padding-bottom: 40px;
-  }
-  .bottom-cards {
-    flex-flow: row wrap;
-    min-width: fit-content;
-    padding-bottom: 40px;
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .row-col {
+    max-width: 952px;
+    gap: 0px;
   }
 
-  [title~=seusslogo] {
-    width: 275px;}
-
-  [title~=imgroom] {
-    width: 233px;
-    height: 412.5px; 
-    padding: 0px;
+  [title~="img-trading"] {
+    margin-left: -136px;
+    width: 125%;
+    padding-top: 23px;
   }
 
-}
+  [title~="img-room"] {
+    /* height: 315px; */
+    width: 390px;
+    padding-top: 100px;
+    margin: 40px 40px -42px 40px;
+  }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-@media only screen 
-  /* and (min-device-width: 320px)  */
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  [title~="meta-data"] {
+    margin: 40px 40px -116px 40px;
+  }
 
-    .simple-buying {
-      min-width: 25%;
-      min-height: 25vh;
-    }
+  .bottom-banner-bg {
+    height: 100vh;
+  }
 
-    .buying-bg {
-      width: 100%;
-      /* min-height: 119vh; */
-    }
+  .outer {
+    height: 45vh;
+  }
 
-    .com-quotes-bg {
-      padding-bottom: 40px;
-    }
-
-    .show-org1 {
-      flex-flow: row-reverse;
-      width: 50vw;
-      height: 30vh;
-      max-height: 100vh;
-      margin-right: 20%;
-      padding-bottom: 352px;
-    }
-
- 
-
-    .yellow-bg {
-      background-image: url(/assets/yellow-bg.png);
-      width: 100%;
-      /* height: 520px; */
-      background-repeat: no-repeat;
-      background-size: cover;
-      flex-flow: row-reverse;
-      overflow: hidden;
-      /* height: 67.3vh; */
-    }
-
-    
-  
-    /* Bottom-banner */
-
-  .cookie-footer-content {
+  .row-buy {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 32px;
+    flex-flow: row-reverse nowrap;
     align-items: center;
+    max-width: 1360px;
+    margin: 75px 40px 91px 40px;
+  }
+
+  .overlay {
+    position: inherit;
+  }
+
 }
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .section-cards h2 {
+    max-width: 380px;
+  }
+
+  .hero-row {
+    max-width: 770px;
+  }
+
+  .row-col {
+    max-width: 770px;
+    gap: 0px;
+  }
+
+  .row {
+    max-width: 770px;
+  }
+
+  .row-buy {
+    max-width: 770px;
+  }
+
+  .rowR {
+    max-width: 770px;
+    gap: 32px;
+  }
+
+  .row-show {
+    max-width: 770px;
+  }
+
+  [title~="img-room"] {
+    /* height: 315px; */
+    width: 390px;
+    padding-top: 100px;
+    margin: 40px 40px -46px 40px;
+  }
+
+  [title~="meta-data"] {
+    margin: 40px 40px -109px 40px;
+  }
+
+  [title~="people"] {
+    margin-left: -116px;
+  }
+
+  .co {
+    margin-bottom: 0px;
+  }
+
+  .row-com {
+    max-width: 770px;
+    gap: 63px;
+  }
+
+  .row-data {
+    max-width: 770px;
+  }
+
+  .yellow-bg {
+    max-width: 770px;
+  }
+
+  .front>img {
+    width: 148px;
+    height: 224px;
+  }
+
+  .back>img {
+    width: 148px;
+    height: 224px;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .wrapper {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .text-block {
+    /* border: 1px solid red; */
+    width: 440px;
+  }
+
+  h2 {
+    text-align: start;
+  }
+
+  [title~="people"] {
+    max-width: 100vw;
+  }
+
+  [title~="img-room"] {
+    margin: 40px 40px -43px 40px;
+  }
+
+  .front>img {
+    width: 184.71px;
+    height: 279.56px;
+  }
+
+  .back>img {
+    width: 184.71px;
+    height: 279.56px;
+  }
 }
